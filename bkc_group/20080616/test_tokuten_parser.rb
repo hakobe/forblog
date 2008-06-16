@@ -21,7 +21,6 @@ END
 
     assert_equal([1000, 342, 0], datasets.shift)
     assert_equal([2, 2, 9, 11, 932], datasets.shift)
-    assert_equal([0], datasets.shift)
     assert_nil(datasets.shift)
   end
 end
