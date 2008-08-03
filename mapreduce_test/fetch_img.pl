@@ -33,7 +33,7 @@ sub reduce {
 
     my $res = URI::Fetch->fetch( $url );
 
-    open my $fh, '>', "datas/$name"
+    open my $fh, '>', "$name"
         or die "File open error: $!";
     print $fh $res->content;
     close $fh;

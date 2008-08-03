@@ -27,7 +27,7 @@ for my $key (keys %all_urls) {
 
     my $res = URI::Fetch->fetch( $url );
 
-    open my $fh, '>', "datas_no_mapreduce/$name"
+    open my $fh, '>', "$name"
         or die "File open error: $!";
     print $fh $res->content;
     close $fh;
